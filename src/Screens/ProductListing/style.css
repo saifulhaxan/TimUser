@@ -1,0 +1,91 @@
+.stats {
+    margin-bottom: 1rem;
+    border-right: 2px solid #fff0;
+}
+
+.avatarIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.productImage img {
+    width: 100%;
+    object-fit: cover;
+    height: 530px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: #5a3473 !important;
+    box-shadow: none !important;
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(100) !important;
+}
+
+.mainTitle {
+    font-size: 22px !important;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #fff !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.tableDropdownMenu {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 0.3rem !important;
+    min-width: auto !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    text-align: left !important;
+}
+
+.tableAction {
+    background: #fff0;
+    border: none;
+    color: #333;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    text-decoration: none;
+    transition: .3s linear;
+    width: 100%;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .stats, .stats:not(:last-child) {
+        border-color: #fff0;
+    }
+
+    .stats:nth-child(odd) {
+        border-color: #000;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .stats, .stats:not(:last-child), .stats:nth-child(odd) {
+        border-color: #fff0;
+    }
+}
+
+
+
+

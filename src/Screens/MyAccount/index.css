@@ -1,0 +1,31 @@
+.manaThumnail {
+    width: 200px;
+    height: 215px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.manaThumnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.myAccountPage .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #5a3473 !important;
+    color: #fff !important;
+}
+
+.myAccountPage .nav-pills .nav-link {
+    color: #545454;
+}
+
+.pageTitle h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.customTable button:after {
+    display: none;
+}

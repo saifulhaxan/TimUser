@@ -1,0 +1,63 @@
+.slick-slide {
+    padding-right: 20px;
+    /* Adjust the margin to your desired spacing */
+}
+
+.featured_novel_carousel .slick-prev {
+    left: 115px;
+    z-index: 999;
+}
+
+.featured_novel_carousel .slick-next {
+    right: 115px;
+    z-index: 999;
+}
+
+
+.featured_novel_carousel .img_div {
+    flex-shrink: 0;
+    width: 25%;
+}
+
+
+button.slick-arrow {
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15%;
+    padding: 8px 6px;
+    background-color: #2c0657;
+    font-weight: bold;
+    width: 40px;
+    text-align: center;
+    height: 34px;
+    border: 1px solid #2c0657;
+    visibility: hidden;
+}
+
+.slick-arrow::before {
+    color: #2c0657;
+    visibility: visible;
+    font-size: 36px;
+}
+
+.novel_rated_card img {
+    width: 100px !important;
+    margin: auto;
+    height: 152px;
+    object-fit: cover;
+}
+
+.novel_first_wrap .novel_rated_card h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.img_div {
+    flex-shrink: 0;
+}
+
+.novel_first_wrap .slick-prev {
+    left: -50px;
+}

@@ -1,0 +1,87 @@
+@media only screen and  (max-width: 1380px) { 
+  .also_like_novel_nav {
+    position: absolute;
+    top: 28%;
+    display: flex;
+    /* flex-direction: column; */
+    right: 5%;
+    z-index: 99;
+}
+
+.best_author_nav {
+
+  right: 5%;
+  z-index: 99;
+}
+
+ }
+
+@media only screen and (max-width:1160px)   {  }
+
+@media only screen and (max-width:991px){
+  .mobile-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .mobile-top img {
+    width: 95px;
+    height: 94px;
+}
+
+  /*RESPONSIVE NAVIGATION*/
+  .mobile-menu{
+    display: block;
+  }
+  .desktop-header{
+    display: none;
+  }
+  .header-top {
+    display: none;
+  }
+  /*RESPONSIVE NAVIGATION*/
+}
+
+@media only screen and  (max-width: 768px)  {  }
+
+@media only screen and  (max-width: 576px)  { 
+  .review_third_wrap h1::after {
+    content: '';
+    background-color: #501f61;
+    top: 50%;
+    right: 0px;
+    position: absolute;
+    width: 72%;
+    height: 1px;
+    display: none;
+}
+
+  .review_seventh_wrap .btn_div {
+    text-align: left;
+}
+
+  .review_seventh_wrap .rev_sev_bot div {
+
+    padding-bottom: 25px;
+}
+
+  .review_fifth_wrap .review_rating h3 {
+    font-size: 20px;
+ 
+    line-height: 50px;
+ 
+}
+
+  .review_second_wrap .fan_card.top_fan {
+
+    position: static;
+    width: 100%;
+ 
+}
+
+ }
+
+@media only screen and  (max-width: 375px)  {  }
+
