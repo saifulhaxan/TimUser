@@ -7,6 +7,9 @@ import Accordion from 'react-bootstrap/Accordion';
 import CustomInput from "../../Components/CustomInput";
 import { UserLayout } from "../../Components/Layout/UserLayout";
 import './style.css'
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+
 import { BookListingCover } from "../../Assets/images";
 
 export const ProductDetail = () => {
@@ -208,14 +211,22 @@ export const ProductDetail = () => {
 
                                 {CapterShow ? (
                                     <div className="row">
-                                        <div className="col-md-12">
+                                        {/* <div className="col-md-12">
                                             <div className="d-flex justify-content-between">
                                                 <h2 className="mainTitle mb-4">
                                                     Book Chapters
                                                 </h2>
                                             </div>
-                                        </div>
-                                        <div className="col-md-12">
+                                        </div> */}
+
+
+<Tabs
+      defaultActiveKey="profile"
+      id="uncontrolled-tab-example"
+      className="mb-3"
+    >
+      <Tab eventKey="home" title=" Book Chapters">
+      <div className="col-md-12">
                                             <Accordion defaultActiveKey="0">
                                                 {data?.chapters && data?.chapters.map((item, index) => (
                                                     <Accordion.Item eventKey={index}>
@@ -251,6 +262,248 @@ export const ProductDetail = () => {
                                             </Accordion>
                                         </div>
 
+      </Tab>
+      <Tab eventKey="profile" title="Book Reviews">
+      <section class="   text-center text-lg-start shadow-1-strong rounded" 
+ 
+  >
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20%2810%29.webp"
+                class="rounded-circle img-fluid shadow-1" alt="woman avatar" width="200" height="200" />
+            </div>
+            <div class="col-lg-8">
+            
+              <p class="fw-bold lead mb-1"><strong>Anna Smith</strong></p>
+              <p class="text-muted  mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+                molestiae numquam quas, voluptates omnis nulla ea odio quia similique
+                corrupti magnam.
+              </p>
+              <ul class="list-unstyled d-flex    ">
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-info"></i>
+              </li>
+            </ul>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      </Tab>
+      
+
+
+
+      <Tab eventKey="Poster" title="Poster Reviews">
+      <section class="   text-center text-lg-start shadow-1-strong rounded" 
+ 
+  >
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body ">
+          {/* <div class="row">
+            <div class="col-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                class="rounded-circle img-fluid shadow-1" alt="woman avatar"width="65"
+                height="65" />
+            </div>
+            <div class="col-lg-8">
+            
+              <p class="fw-bold lead mb-1"><strong>John Smith</strong></p>
+              <p class="text-muted  mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+                molestiae numquam quas, voluptates omnis nulla ea odio quia similique
+                corrupti magnam.
+              </p>
+              <ul class="list-unstyled d-flex    ">
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-info"></i>
+              </li>
+            </ul>
+             </div>
+          </div>
+           */}
+
+
+
+
+<div class="row d-flex  ">
+      <div class="col-md-10 col-lg-8 col- xl-6">
+        <div class=" ">
+          <div class="card-body p-4">
+            <div class="d-flex flex-start w-100">
+              <img class="rounded-circle shadow-1-strong me-3"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" alt="avatar" width="65"
+                height="65" />
+              <div class="w-100">
+              <p class="fw-bold lead mb-1"><strong>John Smith</strong></p>
+                <ul class="list-unstyled d-flex    ">
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-info"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-info"></i>
+              </li>
+            </ul>
+                <div class="form-outline">
+                <p class="text-muted  mb-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+                molestiae numquam quas, voluptates omnis nulla ea odio quia similique
+                corrupti magnam.
+              </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="row d-flex  ">
+      <div class="col-md-10 col-lg-8 col- xl-6">
+        <div class=" ">
+          <div class="card-body p-4">
+            <div class="d-flex flex-start w-100">
+              <img class="rounded-circle shadow-1-strong me-3"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar" width="65"
+                height="65" />
+              <div class="w-100">
+                <h5>Add a comment</h5>
+                <ul class="rating mb-3 list-unstyled d-flex " data-mdb-toggle="rating">
+                  <li>
+                    <i class="far fa-star fa-sm text-info" title="Bad"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-info" title="Poor"></i>
+                  </li>
+                  <li>
+                  <i class="far fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-info" title="Good"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-info" title="Excellent"></i>
+                  </li>
+                </ul>
+                <div class="form-outline">
+                  <textarea class="form-control" id="textAreaExample" rows="7"></textarea>
+                  <label class="form-label" for="textAreaExample">What is your view?</label>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <button type="button" class="btn btn-danger">
+                    Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  
+</section>
+
+<section >
+  <div class="container my-5 py-5 text-dark">
+    {/* <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <div class="card">
+          <div class="card-body p-4">
+            <div class="d-flex flex-start w-100">
+              <img class="rounded-circle shadow-1-strong me-3"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar" width="65"
+                height="65" />
+              <div class="w-100">
+                <h5>Add a comment</h5>
+                <ul class="rating mb-3" data-mdb-toggle="rating">
+                  <li>
+                    <i class="far fa-star fa-sm text-danger" title="Bad"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-danger" title="Poor"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-danger" title="OK"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-danger" title="Good"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-danger" title="Excellent"></i>
+                  </li>
+                </ul>
+                <div class="form-outline">
+                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                  <label class="form-label" for="textAreaExample">What is your view?</label>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <button type="button" class="btn btn-success">Danger</button>
+                  <button type="button" class="btn btn-danger">
+                    Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> */}
+  </div>
+</section>
+      </Tab>
+      
+     
+    </Tabs>
+                                    
                                     </div>
                                 ) : (<p className="text-center">Please <Link to="/login">Login</Link> To See Chapters for this Book</p>)}
 
